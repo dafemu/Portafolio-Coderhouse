@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* HEADER */
+#header {
+    min-width: 1024px;
+    width: 100%;
+    height: 150px;
+    margin: 0px auto;
+    display: block;
+    background-color: #242426;
+}
+
+#header #logo {
+    display: inline-block;
+    float: left;
+    width: 10%;
+    margin-left: 10px;
+    margin-top: 33px;
+}
+
+#logo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+
+#header #nav {
+    display: inline-block;
+    width: 65%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0px auto;
+    width: 100%;
+}
+
+#nav ul li {
+    display: inline-block;
+    padding: 10px;
+    border-right: 2px solid rgb(245, 238, 238);
+    /* border-bottom: 2px solid rgb(245, 238, 238); */
+    border-top: 2px solid rgb(245, 238, 238);
+}
+
+#nav ul li:first-child{
+    border-left: 2px solid rgb(245, 238, 238);
+}
+
+#nav ul li:hover{
+    background-color: #4F4953;
+}
+
+#nav ul li a {   
+    padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+    text-decoration: none;
+}
+
+#header #social-media {
+    display: inline-block;
+    float: right;
+    width: 23%;
+    margin-top: 38px;
+    text-align: end;
+}
+
+.media-link {
+    display: inline-block;
+	padding-right: 15px;
+    text-align: center;
+}
+
+.media-link p {
+    font-size: 10px;
+    color: wheat;
+    margin-top: 0px;
+}
+
+.media-link a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* FIN HEADER */
+
+/* HOME PAGE */
+#main {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    margin-bottom: 0px;
+    background-color: #FFFFFF;
+}
+
+.content {
+    width: 48%;
+    display: inline-block;
+}
+
+.content h1 {
+    font-size: 40px;
+    padding: 8px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.content p {
+    font-size: 18px;
+    color: #757575;
+    line-height: 1.3;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content img{
+    width: 400px;
+    height: 200px;
+}
+
+#main .main-image,
+#main-contact .main-image {
+    width: 48%;
+    display: inline-block;
+}
+
+.main-image img {
+    width: 500px;
+    height: 500px;
+}
+
+#experience {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px outset #B1BDC5;
+    background-color: #FFFFFF;
+}
+
+.carrousel {
+    width: 48%;
+    display: inline-block;
+}
+
+.carrousel img {
+    width: 300px;
+    height: 300px;
+}
+
+.content button, input[type="submit"] {
+    background-color: skyblue;
+    border: 1px inherit blue;
+    padding: 10px 20px;
+}
+
+#skills {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px inset #628281;
+    background-color: #FFFFFF;
+}
+
+.videos {
+    width: 48%;
+    display: inline-block;
+}
+
+.videos iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px gray;
+}
+
+#contact {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px inset #B1BDC5;
+    background-color: #FFFFFF;
+}
+
+#contact #location {
+    width: 48%;
+    display: inline-block;
+}
+
+#contact form {
+    border: 1px solid white;
+}
+
+#location iframe {
+    width: 100%;
+	height: 300px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 5px solid white;
+	box-shadow: 0px 0px 5px gray;
+}
+
+/* FIN HOME */
+
+/* FOOTER */
+#footer {
+    color: white;
+    background-color: #242426;
+    text-align: center;
+}
+
+#footer p {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+}
+/* FIN FOOTER */
+
+/* -------------- */
+
+/* BLOG PAGE */
+
+#main-blog {
+    min-width: 1024px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#main-blog article {
+    width: 50%;
+	height: auto;
+	border: 1px solid #ccc;
+	margin: 40px auto;
+	padding: 10px;
+	background: white;
+	color: black;
+	box-shadow: 1px 1px 2px #ddd;
+}
+
+article img {
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+article .data {
+    display: block;
+    float: right;
+	background: #393d3f;
+	color: white;
+	line-height: 30px;
+	padding: 4px;
+	font-size: 13px;
+	border-radius: 0px 0px 0px 5px;
+}
+
+article h4 {
+    display: block;
+	font-size: 23px;
+	margin: 3px
+}
+
+article h4 a{
+	text-decoration: none;
+	color: #393d3f;
+}
+
+article h4 a:hover{
+	text-decoration: underline;
+}
+
+#main-blog .data span{
+	padding: 6px;
+}
+#main-blog article p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+/* -------------- */
+
+/* CONTACT PAGE */
+
+#main-contact, #contact-me {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px outset #B1BDC5;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+#main-contact .content .media-link {
+    margin: 15px;
+}
+
+#contact-me h2 {
+    font-size: 22px;
+}
+
+#contact-me form label {
+    font-size: 18px;
+    color: red;
+}
+
+#contact-me form input {
+    padding: 10px;
+}
+
+/* -------------- */
+/* EXPERIENCE PAGE */
+#main-experience {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px outset #B1BDC5;
+    background-color: #FFFFFF;
+}
+
+#main-experience .card {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+    height: 300px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+.card p{
+    font-size: 12px;
+    padding: 10px;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+#resume {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px outset #B1BDC5;
+    background-color: #FFFFFF;
+}
+
+#resume p{
+    font-size: 14px;
+    color: #333333;
+    margin: 10px;
+}
+
+/* -------------- */
+/* PORTFOLIO PAGE */
+#main-portfolio {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px outset #B1BDC5;
+    background-color: #FFFFFF;
+}
+
+.skill-card {
+    display: inline-block;
+    margin: 10px;
+    border: 2px inset #2c292c;
+}
+.skill-card img {
+    width: 150px;
+    height: 150px;
+}
+
+#projects {
+    min-width: 1024px;
+    width: 100%;
+	margin: 0px auto;
+    border: 5px outset #B1BDC5;
+    background-color: #FFFFFF;
+}
+
+#projects img {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
