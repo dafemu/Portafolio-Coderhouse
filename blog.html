@@ -5,90 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
-     <link rel="stylesheet" href="./styles/styles2.css">
+    <!-- <link rel="stylesheet" href="./styles/styles2.css"> -->
+    <link rel="stylesheet" href="./styles/styles3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <link rel="icon" type="image/x-icon" href="./assets/programmer.png" />
     <title>Blog</title>
 </head>
 <body>
     <!-- Inicio de la cabecera -->
-<div id="layout-blog">
-    <header id="header">
-        <div id="logo">
-          <img src="./assets/logo.png"/>
-        </div>
-
-        <nav id="nav">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./experience.html">Experience</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div id="social-media">
-            <div class="media-link">
-                <a href="#"><img src="./assets/github.png"></a>
-                <p>GitHub</p>
+    <header class="col-12 d-flex flex-column flex-nowrap justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center p-2">
+            <div class="container-fluid">
+                <div id="logo">
+                    <img src="./assets/logo.png"/>
+                </div>                  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a href="./index.html" class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="./experience.html" class="nav-link" href="#">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="./portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="./blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div id="social-media">
+                        <div class="media-link">
+                            <a href="#"><img src="./assets/github.png"></a>
+                            <p>GitHub</p>
+                        </div>
+        
+                        <div class="media-link">
+                            <a href="#"><img src="./assets/linkedin.png"></a>
+                            <p>LinkedIn</p>
+                        </div>
+        
+                        <div class="media-link">
+                            <a href="#"><img src="./assets/facebook.png" ></a>
+                            <p>Facebook</p>
+                        </div>
+        
+                        <div class="media-link">
+                            <a href="#"><img src="./assets/instagram.png"></a>
+                            <p>Instagram</p>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
             </div>
-
-            <div class="media-link">
-                <a href="#"><img src="./assets/linkedin.png"></a>
-                <p>LinkedIn</p>
-            </div>
-
-            <div class="media-link">
-                <a href="#"><img src="./assets/facebook.png" ></a>
-                <p>Facebook</p>
-            </div>
-
-            <div class="media-link">
-                <a href="#"><img src="./assets/instagram.png"></a>
-                <p>Instagram</p>
-            </div>
-        </div>
     </header>
       <!-- Fin de la cabecera -->
   
       <!-- Inicio contenido principal -->
-      <section id="main-blog">
-          <article>
-            <img src="./assets/blog-article.jpeg" alt="Name article">
-            <div class="data">
-                <span>Date: 23 Enero</span>
+    <div class="container-fluid">
+      <div class="row">
+        <section id="main-blog" class="col-12 mb-2">
+            <div class="row justify-content-center align-content-center align-items-center">
+                <article class="col-12">
+                    <img src="./assets/blog-article.jpeg" alt="Name article">
+                    <div class="data">
+                        <span>Date: 23 Enero</span>
+                    </div>
+                    <h4>
+                        <a href="#">Article name 1</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aspernatur eum pariatur quis in ullam, quo, excepturi suscipit velit, amet ut? Reprehenderit assumenda cumque ratione, incidunt eligendi iste in error.
+                    </p>
+                  </article>
+        
+                  <article class="col-12">
+                    <img src="./assets/blog-article.jpeg" alt="Name article">
+                    <div class="data">
+                        <span>Date: 23 Enero</span>
+                    </div>
+                    <h4>
+                        <a href="#">Article name 2</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aspernatur eum pariatur quis in ullam, quo, excepturi suscipit velit, amet ut? Reprehenderit assumenda cumque ratione, incidunt eligendi iste in error.
+                    </p>
+                  </article>
             </div>
-            <h4>
-                <a href="#">Article name 1</a>
-            </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aspernatur eum pariatur quis in ullam, quo, excepturi suscipit velit, amet ut? Reprehenderit assumenda cumque ratione, incidunt eligendi iste in error.
-            </p>
-          </article>
-
-          <article>
-            <img src="./assets/blog-article.jpeg" alt="Name article">
-            <div class="data">
-                <span>Date: 23 Enero</span>
-            </div>
-            <h4>
-                <a href="#">Article name 2</a>
-            </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aspernatur eum pariatur quis in ullam, quo, excepturi suscipit velit, amet ut? Reprehenderit assumenda cumque ratione, incidunt eligendi iste in error.
-            </p>
-          </article>
-      </section>
+        </section>
+      </div>
        <!-- Fin contenido principal -->
 
       <!-- Inicio Footer -->
-      <footer id="footer">
-        <p>&copy; David Muñoz Barco - 2022</p>
-        <p>(+57)3137438968</p>
-        <p>david.f.do@hotmail.com</p>
-    </footer>
-</div>
+        <div class="row">
+            <footer class="col-12 bg-dark justify-content-around align-content-center text-center">
+                <p>&copy; David Muñoz Barco - 2022</p>
+                <p>(+57)3137438968</p>
+                <p>david.f.do@hotmail.com</p>
+            </footer>
+        </div>
+    </div>
     <!-- Fin footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 </body>
 </html>

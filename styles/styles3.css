@@ -88,6 +88,8 @@ header #social-media {
 .main-image img {
     width: 300px;
     height: 300px;
+    display: block;
+    margin: 0 auto;
 }
 
 #experience {
@@ -535,8 +537,7 @@ article h4 a:hover{
 }
 
 @media screen and (min-width: 1024px) {
-    #layout #header,
-    #layout-blog #header,
+
     header {
         grid-area: header;
         display: flex;
@@ -549,11 +550,11 @@ article h4 a:hover{
         height: 90px;
     }
 
-    #nav ul li {
+    nav ul li {
         padding: 10px;
     }
 
-    #header #social-media {
+    header #social-media {
         display: flex;
         flex-direction: row;
         text-align: end;
@@ -577,14 +578,6 @@ article h4 a:hover{
     /* ----------------------- */
 
     /* INDEX PAGE */
-    #layout #main {
-        grid-area: main;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
     .content img{
         width: 400px;
         height: 200px;
@@ -595,14 +588,6 @@ article h4 a:hover{
         height: 500px;
     }
 
-    #layout #experience {
-        grid-area: experience;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
     .carrousel img {
         width: 450px;
         height: 300px;
@@ -610,26 +595,10 @@ article h4 a:hover{
 
     #experience .content p {
         display: block;
-    }    
-
-    #layout #skills {
-        grid-area: skills;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
     }
 
-    #skills .content p, #skills .content img{
+    #skills .content img{
         display: block;
-    }
-
-    #layout #contact {
-        grid-area: contact;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
     }
 
     #location iframe {
@@ -644,28 +613,22 @@ article h4 a:hover{
         border: 5px solid white;
         box-shadow: 0px 0px 5px gray;
     }
-    /* ---------------------------------- */
+
     /* FOOTER */
-    #layout #footer, footer {
-        grid-area: footer;
+    footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    #footer p:nth-child(2), #footer p:nth-child(3)  {
+    footer p:nth-child(2),
+    footer p:nth-child(3)  {
         display:  block;
     }
     /* ------------------------ */
 
-
     /* BLOG PAGE */
-
-    #main-blog article {
-        width: 50%;
-    }
-
     article .data {
         width: 25%;
     }
