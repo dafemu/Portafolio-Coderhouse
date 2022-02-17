@@ -191,33 +191,7 @@ footer p:nth-child(3) {
 
 
 /* BLOG PAGE */
-#layout-blog {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "header header header header"
-    "main-blog main-blog main-blog main-blog"
-    "footer footer footer footer";
-    width: 100%;
-    height: auto;
-}
-
-#layout-blog #main-blog {
-    grid-area: main-blog;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    width: 100%;
-    margin: 0px auto;
-}
-
 #main-blog article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
 	height: auto;
 	border: 1px solid #ccc;
 	margin: 40px auto;
@@ -248,19 +222,19 @@ article h4 {
 	margin: 3px
 }
 
-article h4 a{
+article h4 a {
 	text-decoration: none;
 	color: #393d3f;
 }
 
-article h4 a:hover{
+article h4 a:hover {
 	text-decoration: underline;
 }
 
-#main-blog .data span{
+#main-blog .data span {
 	padding: 6px;
 }
-#main-blog article p{
+#main-blog article p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 15px;
@@ -268,30 +242,7 @@ article h4 a:hover{
 /* -------------- */
 
 /* EXPERIENCE PAGE */
-#layout-experience {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "header header header header"
-    "main-experience main-experience main-experience main-experience"
-    "resume resume resume resume"
-    "footer footer footer footer";
-    width: 100%;
-    height: auto;
-}
-
-#layout-experience #main-experience {
-    grid-area: main-experience;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    width: 100%;
-    margin: 0px auto;
+#main-experience {
     border-top: 5px outset #B1BDC5;
     border-bottom: 5px outset #B1BDC5;
     background-color: #FFFFFF;
@@ -299,8 +250,7 @@ article h4 a:hover{
 
 #main-experience .card {
     margin: 20px;
-    max-width: 300px;
-    height: 220px;
+    height: auto;
     padding: 20px;
     align-items: center;
     text-align: center;
@@ -320,10 +270,7 @@ article h4 a:hover{
     font-weight: 100;
 }
 
-#layout-experience #resume {
-    grid-area: resume;
-    width: 100%;
-	margin: 0px auto;
+#resume {
     border-top: 5px outset #B1BDC5;
     border-bottom: 5px outset #B1BDC5;
     background-color: #FFFFFF;
@@ -343,7 +290,7 @@ article h4 a:hover{
 /* -------------- */
 
 /* PORTFOLIO PAGE */
-#layout-portfolio {
+/* #layout-portfolio {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -354,10 +301,10 @@ article h4 a:hover{
     "footer footer footer footer";
     width: 100%;
     height: auto;
-}
+} */
 
-#layout-portfolio #main-portfolio {
-    grid-area: main-portfolio;
+ #main-portfolio {
+    /* grid-area: main-portfolio;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -366,7 +313,7 @@ article h4 a:hover{
     align-content: center;
 
     width: 100%;
-    margin: 0px auto;
+    margin: 0px auto; */
     border-top: 5px outset #B1BDC5;
     border-bottom: 5px outset #B1BDC5;
     background-color: #FFFFFF;
@@ -510,18 +457,6 @@ article h4 a:hover{
         width: 70%;
     }
 
-    /* EXPERIENCE PAGES */
-    #main-experience .div-card{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    #main-experience .card {
-        height: 250px;
-    }
-
     /* PORTFOLIO PAGES */
     #contact-me {
         justify-content: center;
@@ -633,18 +568,6 @@ article h4 a:hover{
     }
     /* -------------------------- */
 
-    /* EXPERIENCE PAGE */
-   #main-experience .div-card {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
-    #main-experience .card {
-        height: 300px;
-    }
-    /* ------------------------ */
 
     /* PORTFOLIO PAGE */
     #layout-portfolio #main-portfolio {
