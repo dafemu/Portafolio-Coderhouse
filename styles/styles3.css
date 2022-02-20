@@ -290,39 +290,10 @@ article h4 a:hover {
 /* -------------- */
 
 /* PORTFOLIO PAGE */
-/* #layout-portfolio {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "header header header header"
-    "main-portfolio main-portfolio main-portfolio main-portfolio"
-    "projects projects projects projects"
-    "footer footer footer footer";
-    width: 100%;
-    height: auto;
-} */
-
  #main-portfolio {
-    /* grid-area: main-portfolio;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    width: 100%;
-    margin: 0px auto; */
     border-top: 5px outset #B1BDC5;
     border-bottom: 5px outset #B1BDC5;
     background-color: #FFFFFF;
-}
-
-.skillsets {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .skill-card {
@@ -336,50 +307,28 @@ article h4 a:hover {
 }
 
 #projects {
-    grid-area: projects;
     width: 100%;
-	margin: 0px auto;
     border-top: 5px outset #B1BDC5;
     border-bottom: 5px outset #B1BDC5;
     background-color: #FFFFFF;
 }
 
-#projects > div {
+/* #projects > div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 #projects img {
-    width: 150px;
-    height: 150px;
+    width: 144px;
+    height: 144px;
     margin: 2px;
 }
 /* -------------- */
 
 /* CONTACT PAGE */
-#layout-contact {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: 
-    "header header header header"
-    "main-contact main-contact main-contact main-contact"
-    "contact-me contact-me contact-me contact-me"
-    "footer footer footer footer";
-    width: 100%;
-    height: auto;
-}
-
 #main-contact {
-    grid-area: main-contact;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-    width: 100%;
     border-top: 5px outset #B1BDC5;
     border-bottom: 5px outset #B1BDC5;
     background-color: #FFFFFF;
@@ -387,26 +336,10 @@ article h4 a:hover {
 }
 
 #contact-me {
-    grid-area: contact-me;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-    width: 100%;
     border-top: 5px outset #B1BDC5;
     border-bottom: 5px outset #B1BDC5;
     background-color: #FFFFFF;
     text-align: center;
-}
-
-#main-contact .content .div-social-link {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
 }
 
 #main-contact .content .media-link {
@@ -425,15 +358,23 @@ article h4 a:hover {
     margin-bottom: 10px;
 }
 
-#contact-me > div {
+/* #contact-me > div {
     width: 100%;
-}
+} */
 
 #contact-me form input,
 #contact-me form textarea {
     width: 85%;
     padding: 10px;
     outline: 1px solid #393d3f;
+}
+
+#contact-me form input:focus,
+#contact-me form textarea:focus {
+    outline: none;
+    border: 2px solid #04a75b;
+    color: #4F4953;
+    font-weight: 200;
 }
 
 #contact-me form label {
@@ -457,16 +398,9 @@ article h4 a:hover {
         width: 70%;
     }
 
-    /* PORTFOLIO PAGES */
-    #contact-me {
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    #contact-me > div {
+    /* #contact-me > div {
         width: 50%;
-    }
+    } */
 
 }
 
@@ -566,17 +500,8 @@ article h4 a:hover {
     article .data {
         width: 25%;
     }
-    /* -------------------------- */
-
 
     /* PORTFOLIO PAGE */
-    #layout-portfolio #main-portfolio {
-        grid-area: main-portfolio;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
     .skill-card img {
         width: 150px;
         height: 150px;
@@ -586,22 +511,8 @@ article h4 a:hover {
         width: 300px;
         height: 300px;
     }
-    /* -------------- */
 
     /* CONTACT PAGE */
-    #main-contact {
-        grid-area: main-contact;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    #contact-me {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-    }
-    
     #contact-me h2 {
         font-size: 22px;
         margin-bottom: 10px;
