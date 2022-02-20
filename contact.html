@@ -72,54 +72,62 @@
   
       <!-- Inicio contenido principal -->
     <div class="container-fluid">
-      <section id="main-contact">
-        <div class="content">
-            <h1>Contact.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Dicta deserunt praesentium, commodi quaerat ipsum aliquam, 
-                laudantium minus alias quos id sapiente? Nulla velit perferendis 
-                aliquam modi veritatis ullam animi distinctio.
-            </p>
-            <div class="div-social-link">
-                <div class="media-link">
-                    <a href="#"><img src="./assets/linkedin.png"></a>
-                    <p>LinkedIn</p>
+        <div class="row">
+            <section id="main-contact" class="col-12">
+                <div class="row justify-content-center align-items-center align-content-center">
+                    <div class="content col-lg-6 text-center">
+                        <h1>Contact.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dicta deserunt praesentium, commodi quaerat ipsum aliquam, 
+                            laudantium minus alias quos id sapiente? Nulla velit perferendis 
+                            aliquam modi veritatis ullam animi distinctio.
+                        </p>
+                        <div class="div-social-link d-flex flex-row justify-content-around">
+                            <div class="media-link">
+                                <a href="#"><img src="./assets/linkedin.png"></a>
+                                <p>LinkedIn</p>
+                            </div>
+    
+                            <div class="media-link">
+                                <a href="#"><img src="./assets/facebook.png" ></a>
+                                <p>Facebook</p>
+                            </div>
+    
+                            <div class="media-link">
+                                <a href="#"><img src="./assets/instagram.png"></a>
+                                <p>Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="main-image col-lg-6">
+                        <img src="./assets/contact-main.png">
+                    </div>
                 </div>
-
-                <div class="media-link">
-                    <a href="#"><img src="./assets/facebook.png" ></a>
-                    <p>Facebook</p>
-                </div>
-
-                <div class="media-link">
-                    <a href="#"><img src="./assets/instagram.png"></a>
-                    <p>Instagram</p>
-                </div>
-            </div>
+            </section>
         </div>
 
-        <div class="main-image">
-            <img src="./assets/contact-main.png">
+        <div class="row">
+            <section id="contact-me" class="col-12">
+                <div class="row flex-column flex-nowrap justify-content-evenly">
+                    <h2>Contact with me and lets work together</h2>
+                    <div class="mb-2">
+                        <form action="">
+                            <label for="name">Name</label><br>
+                            <input type="text" name="name">
+                            <br>
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email">
+                            <br>
+                            <label for="message">Message</label><br>
+                            <textarea name="" id="" cols="20" rows="10" placeholder="Message"></textarea>
+                            <br><br>
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-
-      <section id="contact-me">
-        <h2>Contact with me and lets work together</h2>
-            <div>
-                <form action="">
-                    <label for="name">Name</label><br>
-                    <input type="text" name="name">
-                    <br>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email">
-                    <br>
-                    <label for="message">Message</label><br>
-                    <textarea name="" id="" cols="20" rows="10" placeholder="Message"></textarea>
-                    <br><br>
-                    <input type="submit" value="Send Message">
-                </form>
-            </div>
-      </section>
        <!-- Fin contenido principal -->
 
     <!-- Inicio Footer -->
