@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+#experience, #main-experience, #resume, #main-portfolio, #projects, #main-contact, #contact-me {
+  border-top: 5px outset #B1BDC5;
+  border-bottom: 5px outset #B1BDC5; }
+
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px; }
 
@@ -63,8 +67,6 @@ header #social-media {
     margin: 0 auto; }
 
 #experience {
-  border-top: 5px outset #B1BDC5;
-  border-bottom: 5px outset #B1BDC5;
   background-color: #FFFFFF; }
   #experience .content p {
     display: none; }
@@ -79,13 +81,12 @@ header #social-media {
   margin-top: 10px;
   margin-bottom: 10px;
   max-width: 200px;
-  transition: all 1s;
-  color: #00538c; }
+  transition: all 1s; }
   .buttom-custom:hover {
     border-radius: 50px;
     box-shadow: 0px 0px 10px gray;
     background-color: #242426;
-    color: #ffffff;
+    color: #FFFFFF;
     animation: bling 10s infinite linear; }
 
 @keyframes bling {
@@ -129,9 +130,140 @@ footer {
     footer p:nth-child(2), footer p:nth-child(3) {
       display: none; }
 
+/* ------------------------ */
+/* BLOG PAGE */
+#main-blog article {
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 40px auto;
+  padding: 10px;
+  background: white;
+  color: black;
+  box-shadow: 1px 1px 2px #ddd; }
+  #main-blog article img {
+    width: 100%;
+    height: 400px; }
+  #main-blog article .data {
+    width: 40%;
+    align-self: flex-end;
+    background: #393d3f;
+    color: white;
+    line-height: 30px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px; }
+    @media screen and (min-width: 768px) {
+      #main-blog article .data {
+        width: 22%; } }
+    #main-blog article .data span {
+      padding: 6px; }
+  #main-blog article h4 {
+    font-size: 23px;
+    margin: 3px a;
+      margin-text-decoration: none;
+      margin-color: #393d3f; }
+    #main-blog article h4 a:hover {
+      text-decoration: underline; }
+  #main-blog article p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px; }
+  @media screen and (min-width: 768px) {
+    #main-blog article {
+      width: 70%; } }
+
+/* -------------- */
+/* EXPERIENCE PAGE */
+#main-experience {
+  background-color: #FFFFFF; }
+  #main-experience .card {
+    margin: 20px;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-shadow: rgba(0, 0, 0, 0.103) 0px 5px 10px;
+    border-radius: 10px; }
+    #main-experience .card img {
+      width: 100px;
+      height: 100px; }
+    #main-experience .card p {
+      font-size: 12px;
+      padding: 10px;
+      line-height: 1.8;
+      font-weight: 100; }
+
+#resume {
+  background-color: #FFFFFF; }
+  #resume p {
+    font-size: 14px;
+    color: #333333;
+    margin: 10px; }
+  #resume img {
+    width: 100%;
+    height: auto;
+    width: 100%;
+    height: auto; }
+
+/* -------------- */
+/* PORTFOLIO PAGE */
+#main-portfolio {
+  background-color: #FFFFFF; }
+  #main-portfolio .skill-card {
+    margin: 10px;
+    border: 2px inset #2c292c; }
+    #main-portfolio .skill-card img {
+      width: 80px;
+      height: 80px; }
+
+#projects {
+  width: 100%;
+  background-color: #FFFFFF; }
+  #projects img {
+    width: 144px;
+    height: 144px;
+    margin: 2px; }
+
+/* -------------- */
+/* CONTACT PAGE */
+#main-contact {
+  background-color: #FFFFFF;
+  text-align: center; }
+  #main-contact .content .media-link {
+    margin: 15px; }
+    #main-contact .content .media-link a img {
+      width: 50px;
+      height: 50px;
+      background-color: #242426;
+      border-radius: 10%; }
+
+#contact-me {
+  background-color: #FFFFFF;
+  text-align: center; }
+  #contact-me h2 {
+    font-size: 22px;
+    margin-bottom: 10px; }
+  #contact-me form input,
+  #contact-me form textarea {
+    width: 85%;
+    padding: 10px;
+    outline: 1px solid #393d3f; }
+    #contact-me form input:focus,
+    #contact-me form textarea:focus {
+      outline: none;
+      border: 2px solid #04a75b;
+      color: #4F4953;
+      font-weight: 200; }
+  #contact-me form label {
+    font-size: 18px;
+    color: #393d3f; }
+  #contact-me form input {
+    padding: 10px; }
+
+/* -------------- */
 @media screen and (min-width: 1024px) {
   header {
-    grid-area: header;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; }
@@ -183,4 +315,27 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around; }
     footer:nth-child(2), footer:nth-child(3) {
-      display: block; } }
+      display: block; }
+  /* ------------------------ */
+  /* BLOG PAGE */
+  article .data {
+    width: 25%; }
+  /* PORTFOLIO PAGE */
+  .skill-card img {
+    width: 150px;
+    height: 150px; }
+  #projects img {
+    width: 300px;
+    height: 300px; }
+  /* CONTACT PAGE */
+  #contact-me h2 {
+    font-size: 22px;
+    margin-bottom: 10px; }
+  #contact-me form input,
+  #contact-me form textarea {
+    width: 85%;
+    padding: 10px;
+    outline: 1px solid #393d3f; }
+  #contact-me form label {
+    font-size: 18px;
+    color: #393d3f; } }
