@@ -1,7 +1,7 @@
 {
   "name": "portafolio-proyecto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portafolio web de desarrollador frontend",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
