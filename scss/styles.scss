@@ -353,14 +353,22 @@ footer {
     background-color: map-get($map: $estilos , $key: color);
     text-align: center;
 
-    .content .media-link {
-        margin: 15px;
+    .content {
+        .media-link {
+            margin: 15px;
 
-        a img{
-            @include sizeImages(50px,50px);
-            background-color: #242426;
-            border-radius: 10%;
+            a img{
+                @include sizeImages(50px,50px);
+                background-color: #242426;
+                border-radius: 10%;
+            }
         }
+    }
+
+    .main-image img {
+        @include sizeImages(300px,300px);
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -375,6 +383,12 @@ footer {
     }
 
     form {
+        width: 70%;
+        margin: 0 auto;
+        background: linear-gradient(90deg, rgba(79,73,83,1) 0%, rgba(79,101,122,1) 100%, rgba(93,0,209,0.3603816526610645) 100%);
+        border-radius: 10px;
+        padding-bottom: 20px;
+
         input,
         textarea {
             width: 85%;
@@ -391,7 +405,8 @@ footer {
 
         label {
             font-size: map-get($map: $estilos, $key: sizeFuente);
-            color: #393d3f
+            color: map-get($map: $estilos , $key: color);
+            font-weight: 200;
         }
 
         input {
@@ -513,17 +528,16 @@ footer {
             margin-bottom: 10px;
         }
 
-        form {
+        form {     
             input,
             textarea {
-                width: 85%;
+                width: 75%;
                 padding: 10px;
                 outline: 1px solid #393d3f;
             }
             
             label {
                 font-size: map-get($map: $estilos, $key: sizeFuente);
-                color: #393d3f
             }
         }
     }

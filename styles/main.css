@@ -237,6 +237,11 @@ footer {
       height: 50px;
       background-color: #242426;
       border-radius: 10%; }
+  #main-contact .main-image img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto; }
 
 #contact-me {
   background-color: #FFFFFF;
@@ -244,22 +249,29 @@ footer {
   #contact-me h2 {
     font-size: 22px;
     margin-bottom: 10px; }
-  #contact-me form input,
-  #contact-me form textarea {
-    width: 85%;
-    padding: 10px;
-    outline: 1px solid #393d3f; }
-    #contact-me form input:focus,
-    #contact-me form textarea:focus {
-      outline: none;
-      border: 2px solid #04a75b;
-      color: #4F4953;
+  #contact-me form {
+    width: 70%;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #4f4953 0%, #4f657a 100%, rgba(93, 0, 209, 0.360382) 100%);
+    border-radius: 10px;
+    padding-bottom: 20px; }
+    #contact-me form input,
+    #contact-me form textarea {
+      width: 85%;
+      padding: 10px;
+      outline: 1px solid #393d3f; }
+      #contact-me form input:focus,
+      #contact-me form textarea:focus {
+        outline: none;
+        border: 2px solid #04a75b;
+        color: #4F4953;
+        font-weight: 200; }
+    #contact-me form label {
+      font-size: 18px;
+      color: #FFFFFF;
       font-weight: 200; }
-  #contact-me form label {
-    font-size: 18px;
-    color: #393d3f; }
-  #contact-me form input {
-    padding: 10px; }
+    #contact-me form input {
+      padding: 10px; }
 
 /* -------------- */
 @media screen and (min-width: 1024px) {
@@ -333,9 +345,8 @@ footer {
     margin-bottom: 10px; }
   #contact-me form input,
   #contact-me form textarea {
-    width: 85%;
+    width: 75%;
     padding: 10px;
     outline: 1px solid #393d3f; }
   #contact-me form label {
-    font-size: 18px;
-    color: #393d3f; } }
+    font-size: 18px; } }
